@@ -16,25 +16,61 @@ Mit dieser kleinen HTML-Datei kriegst du das Feeling jetzt auch in deinen Stream
 
 ## Optionen
 
-Sucher in der `index.html` nach dem Text "OPTIONS".
+Suche in der `index.html` nach dem Text "OPTIONS".
 Dort findest du mehrere Variablen.
 
 ### Phrases
 
 Hier kannst du die Texte eintragen, die in deinem Stream auftauchen sollen. Die Texte werden von oben nach unten durchlaufen. Danach fängt es oben wieder an. Kopiere einfach eine der Standard-Zeilen und ersetze den Text.
 
+```js
+const PHRASES = [
+    'Dackel werden gefüttert',
+    'Blubberblasen werden angerührt',
+    'DEIN EIGENER TEXT'
+]
+```
+
 ### animationDurationInSeconds
 
 Diese Zahl bestimmt wie viele Sekunden die einzelnen Texte sichtbar sind. Der Standard beträgt 8 Sekunden.
 
+```js
+const animationDurationInSeconds = 8
+```
+
 ### fontSize
 
-Die Textgröße. Belege sie mit einem px oder rem Wert.
+Die Textgröße. Belege sie beispielsweise mit einem px oder rem Wert.
+
+```js
+const fontSize = '64px'
+
+// Oder
+const fontSize = '2rem'
+```
 
 ### fontColor
 
-Die Textfarbe. Passe sie an dein Stream-Layout an. Belege sie mit einem Farbnamen oder einem HEX-Code.
+Die Textfarbe. Passe sie an dein Stream-Layout an. Belege sie mit einem (englischen) Farbnamen oder einem HEX-Code.
+
+```js
+const fontColor = '#000'
+
+// Oder
+const fontColor = 'black'
+```
 
 ### backgroundColor
 
-Die Hintergrundfarbe der Seite. In den meisten Fällen sollte sie auf `transparent` stehen. So kannst du die Quelle in deiner Streaming-Software über jeden beliebigen Hintergrund legen. Alternativ kannst du sie mit einem HEX-Code belegen.
+Die Hintergrundfarbe der Seite. In den meisten Fällen sollte sie auf `transparent` stehen. So kannst du die Quelle in deiner Streaming-Software über jeden beliebigen Hintergrund legen. Alternativ kannst du sie mit einem (englischen) Farbnamen oder HEX-Code belegen.
+
+```js
+const backgroundColor = 'transparent'
+
+// Oder
+const backgroundColor = '#000'
+
+// Oder
+const backgroundColor = 'black'
+```
