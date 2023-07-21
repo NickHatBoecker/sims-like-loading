@@ -19,7 +19,7 @@ Mit dieser kleinen HTML-Datei kriegst du das Feeling jetzt auch in deinen Stream
 Suche in der `index.html` nach dem Text "OPTIONS".
 Dort findest du mehrere Variablen.
 
-### Phrases
+### PHRASES
 
 Hier kannst du die Texte eintragen, die in deinem Stream auftauchen sollen. Die Texte werden von oben nach unten durchlaufen. Danach fängt es oben wieder an. Kopiere einfach eine der Standard-Zeilen und ersetze den Text.
 
