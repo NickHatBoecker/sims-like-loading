@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+    * {
+        box-sizing:  border-box !important;
+        border-radius: 0 !important;
+    }
+
+    html, body {
+        margin: 0;
+        padding:  0;
+        font-family: sans-serif;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .animation-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #animated-text {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateX(100%);
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .fly-in {
+        animation: flyIn 8s linear infinite;
+    }
+
+    @keyframes flyIn {
+        0% {
+          transform: translateX(100%);
+        }
+
+        10%, 90% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="animation-container">
+        <div id="animated-text" class="fly-in"></div>
+    </div>
+
+    <script>
+    // ###################
+    // OPTIONS
+    // ###################
+
+
+    const PHRASES = [
+        'Dackel werden gefüttert',
+        'Gebrüll wird einstudiert',
+        'Blubberblasen werden angerührt',
+        'EMF Reader werden eingepackt',
+    ]
+
+    // HOW LONG WILL ONE TEXT BE READABLE?
+    const animationDurationInSeconds = 8
+
+    // TEXT FONT SIZE
+    const fontSize = '64px'
+
+    // TEXT COLOR
+    const fontColor = '#000'
+
+    // BACKGROUND COLOR
+    const backgroundColor = 'transparent'
+
+
+    // ###################
+    // STOP EDITING
+    // ###################
+    </script>
+
+    <script>
+    document.body.style.backgroundColor = backgroundColor
+
+    let currentTextIndex = 0
+    const animatedText = document.getElementById('animated-text')
+
+    animatedText.style.animationDuration = `${animationDurationInSeconds}s`
+    animatedText.style.fontSize = fontSize
+    animatedText.style.color = fontColor
+
+    function startAnimation() {
+        animatedText.innerHTML = `${PHRASES[currentTextIndex]}...`
+        currentTextIndex = (currentTextIndex + 1) % PHRASES.length
+    }
+
+    setInterval(
+        startAnimation,
+        (animationDurationInSeconds * 1000)
+    )
+    startAnimation()
+    </script>
+</body>
+</html>
+
