@@ -9,7 +9,7 @@ Mit dieser kleinen HTML-Datei kriegst du das Feeling jetzt auch in deinen Stream
 
 ## Verwendung
 
-1. Lade die `index.html` Datei herunter.
+1. Lade die `index.html` Datei herunter. [Klicke hier](https://raw.githubusercontent.com/NickHatBoecker/sims-like-loading/main/index.html)
 1. Lege in OBS (oder eine Streaming Anwendung deiner Wahl) eine neue Browser-Quelle an
 1. Hake die Checkbox "Lokale Datei" an und wähle die heruntergeladene `index.html` im Feld *"Lokale Datei"* aus
 1. Stelle die Breite und Höhe auf deine Stream-Größe an (bspw. 1920x1080)
